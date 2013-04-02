@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Production Dash</title>
+		<link type="text/css" rel="stylesheet" href="stylesheet.css" />
+		<style>
+			html, body { height: 100%; width: 100%; margin: 0; }
+		</style>
+	</head>
+	<body>
+		<div>
+			<div class="column" id="left">
+				<div id="date">
+					<div id="month" >
+						<script language="javascript"> 
+							var d=new Date();
+							var month=new Array();
+							month[0]="January";
+							month[1]="February";
+							month[2]="March";
+							month[3]="April";
+							month[4]="May";
+							month[5]="June";
+							month[6]="July";
+							month[7]="August";
+							month[8]="September";
+							month[9]="October";
+							month[10]="November";
+							month[11]="December";
+							var n = month[d.getMonth()];
+							today = new Date(); 
+							document.write(n);	
+						
+						</script>
+					</div>
+					<div id="day">
+						<script language="javascript">
+							document.write(today.getDate());
+						</script>
+					</div">	
+					<div id="bingo">
+						DAILY BINGO NUMBER
+					</div>
+					<div>
+					</div>
+				</div>
+				<div id="office">
+					<!--img src="../images/meetings.jpg"-->
+					<div class="title" id="meetings" style="background-image: url(../images/meetings.jpg); height:auto; width:100%;>
+						MEETINGS
+					</div>
+					<div >
+					</div>
+					<div id="fort">
+						AT THE FORT
+					</div>
+					<div id="absent">
+						OUT TODAY
+					</div>
+				</div>
+			</div>
+		</div>
+			<div class="column" id="center">
+				<div id="jobs">
+					HOT JOBS
+				</div>
+				<div id="happenings">
+					WHAT'S HAPPENING THIS WEEK
+				</div>
+			</div>
+			<div class="column" id="right">	
+				<div id="calendar">
+					CALENDAR
+				</div>
+				<div id="fact">
+					FACT
+				</div >
+				<div id="upcoming">
+					UPCOMING
+				</div>	
+				<div id="kudos">
+					KUDOS
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
